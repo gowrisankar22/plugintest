@@ -1,0 +1,9 @@
+{
+	"applications": {},
+	"bootstrapPlugins": {
+		"bestpracticeplugin": {
+			"component": "flp.plugin.bestpractice",
+			"url": "../../../../../webapp/"
+		}
+	}
+}
