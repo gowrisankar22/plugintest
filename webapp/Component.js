@@ -13,18 +13,13 @@ sap.ui.define([
 
 		init: function() {
 			var rendererPromise = this._getRenderer();
-			var that = this;
-
-			// get the configuration as defined
-			this.config = this.getComponentData().config;
-			this.config.iconName = this.config.hasOwnProperty("iconName") ? this.config.iconName : "add";
 
 			/**
 			 * Add item to the header
 			 */
 			rendererPromise.then(function(oRenderer) {
 				oRenderer.addHeaderItem("sap.m.Button", {
-					icon: "sap-icon://"+ that.config.iconName,
+					icon: "sap-icon://add",
 					tooltip: "Add bookmark",
 					press: function() {
 						MessageToast.show("This SAP Fiori Launchpad has been extended to improve your experience");
